@@ -1,0 +1,29 @@
+<mat-card>
+    <form class="example-form" [formGroup]="newEmployee" (ngSubmit)="onCreateEmployee()">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="First Name" formControlName="firstName">
+        </mat-form-field><br>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Last Name" formControlName="lastName">
+        </mat-form-field><br>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="e - Mail" formControlName="eMail">
+        </mat-form-field><br>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Mobile" formControlName="mobile">
+        </mat-form-field><br>
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Address 1" formControlName="address1"></textarea>
+        </mat-form-field><br>
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Address 2" formControlName="address2"></textarea>
+        </mat-form-field><br>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="City" formControlName="city">
+        </mat-form-field><br>
+        <mat-checkbox formControlName="salaryCredited">Salary Credited</mat-checkbox><br>
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+        <button mat-raised-button color="accent" type="button" routerLink="/display">Back</button>
+
+    </form>
+</mat-card>

@@ -1,0 +1,35 @@
+:host{
+    margin-top: 50px;
+}
+mat-card{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+.example-full-width{
+    width: 80%;
+}
+button{
+    margin: 5px;
+}
+mat-expansion-panel{
+    margin-top: 6px;
+}
+
+@media screen and (max-width:768px){
+    mat-card{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .example-full-width{
+        width: 100%;
+    }
+    mat-list{
+
+    }
+    form{
+        padding: 5px 20px;
+    }
+}
